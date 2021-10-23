@@ -1,5 +1,6 @@
 // A complete C++ program
-import <iostream>;
+// import <iostream>;
+#include <iostream>
 
 int main()
 {
