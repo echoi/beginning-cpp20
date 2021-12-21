@@ -3,6 +3,7 @@
 // weight in kilograms, height in meters
 
 #include <iostream>
+#include <iomanip>
 //import <format>;
 #include <array>        // For array<T,N>
 
@@ -36,7 +37,7 @@ int main()
   // Output table headings
   std::cout << " ", '|';
   for (auto w : weight_lbs)
-    std::cout << " " << w << ", ";
+    std::cout <<  std::setw(9) << w;
   std::cout << std::endl;
   
   // Output line below headings
@@ -47,7 +48,7 @@ int main()
   const unsigned int inches_per_foot {12U};
   for (auto h : height_ins)
   {
-    const unsigned feet{ h / inches_per_foot };
+    const unsigned feet{ h / inches_per_foot }; 
     const unsigned inches{ h % inches_per_foot };
     std::cout << "feet: " << feet << "   inches: "<< inches << std::endl;
 
@@ -56,7 +57,8 @@ int main()
     {
       const double w_kg = w / lbs_per_kg; // Weight in kilogram
       const double bmi = w_kg / (h_m * h_m);
-      std::cout << " w: " << w << ", bmi: " << bmi << std::endl;
+      std::cout << std::setw(9) << bmi; // << std::endl;
+      // std::cout << " w: " << w << ", bmi: " << bmi << std::endl;
     }
     std::cout << std::endl;
   }
