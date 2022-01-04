@@ -29,11 +29,11 @@ int main()
   std::cout << "Bitwise AND: red & white = "<< (red & white) << std::endl;
   std::cout << "Bitwise  OR: red | white = "<< (red | white) << std::endl;
 
-  std::cout << "\nNow try successive exclusive OR operations:\n";
-  unsigned int mask{ red ^ white };
-  std::cout << "mask = red ^ white = " << std::hex << mask << std::endl;
-  std::cout << "        mask ^ red = " << (mask ^ red) << std::endl;
-  std::cout << "       mask ^ white = " << (mask ^ white) << std::endl;
+  // std::cout << "\nNow try successive exclusive OR operations:\n";
+  // unsigned int mask{ red ^ white };
+  // std::cout << std::format("mask = red ^ white = {:08X}\n", mask);
+  // std::cout << std::format("        mask ^ red = {:08X}\n", mask ^ red);
+  // std::cout << std::format("      mask ^ white = {:08X}\n", mask ^ white);
 
   // unsigned int flags{ 0xFF };            // Flags variable
   // unsigned int bit1mask{ 0x1 };          // Selects bit 1
