@@ -1,8 +1,10 @@
 // Initializing pointers with strings
-import <iostream>;
+#include <iostream>
 
 int main()
 {
+
+  // string ['a']['b']['c']
   const char* pstar1 {"Fatty Arbuckle"};
   const char* pstar2 {"Clara Bow"};
   const char* pstar3 {"Lassie"};
@@ -12,6 +14,9 @@ int main()
   const char* pstar7 {"Oliver Hardy"};
   const char* pstar8 {"Greta Garbo"};
   const char* pstr {"Your lucky star is "};
+
+  double num {1.0};
+  const double *pnum {&num};
 
   std::cout << "Pick a lucky star! Enter a number between 1 and 8: ";
   size_t choice {};
@@ -29,4 +34,5 @@ int main()
   case 8: std::cout << pstr << pstar8 << std::endl; break;
   default: std::cout << "Sorry, you haven't got a lucky star." << std::endl;
   }
+  std::cout << pnum << std::endl;
 }
