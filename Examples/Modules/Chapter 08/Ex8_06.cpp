@@ -17,13 +17,12 @@ int main()
   std::cout << *(beans) << " " << *(beans+1) << " " << *(beans+2) << std::endl;
   std::cout << beans[0] << " " << beans[1] << " " << beans[2] << std::endl;
   
-
   // The addresses point to the first row element
   std::cout << std::endl;
   std::cout << *(*(beans)) << " " << *(*(beans+1)) << " " << *(*(beans+2)) << std::endl;
   std::cout << *(beans)[0] << " " << *(beans)[1] << " " << *(beans)[2] << std::endl;
   
-  // The addresses point to the first row element
+  // How to access different column elements of a row vector
   std::cout << std::endl;
   std::cout << *(*(beans+1)) << " " << *(*(beans+1)+1) << " " << *(*(beans+1)+2) << " " << *(*(beans+1)+3) << std::endl;
   std::cout << beans[1][0] << " " << beans[1][1] << " " << beans[1][2] << " " << beans[1][3] << std::endl;
