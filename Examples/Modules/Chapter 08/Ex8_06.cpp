@@ -12,7 +12,23 @@ int main()
   double beans[3][4] {  { 1.0,   2.0,   3.0,   4.0},
                         { 5.0,   6.0,   7.0,   8.0},
                         { 9.0,  10.0,  11.0,  12.0}  };
+  // Row elements of an array are addressess!!
+  std::cout << std::endl;
+  std::cout << *(beans) << " " << *(beans+1) << " " << *(beans+2) << std::endl;
+  std::cout << beans[0] << " " << beans[1] << " " << beans[2] << std::endl;
+  
 
+  // The addresses point to the first row element
+  std::cout << std::endl;
+  std::cout << *(*(beans)) << " " << *(*(beans+1)) << " " << *(*(beans+2)) << std::endl;
+  std::cout << *(beans)[0] << " " << *(beans)[1] << " " << *(beans)[2] << std::endl;
+  
+  // The addresses point to the first row element
+  std::cout << std::endl;
+  std::cout << *(*(beans+1)) << " " << *(*(beans+1)+1) << " " << *(*(beans+1)+2) << " " << *(*(beans+1)+3) << std::endl;
+  std::cout << beans[1][0] << " " << beans[1][1] << " " << beans[1][2] << " " << beans[1][3] << std::endl;
+
+  std::cout << std::endl;
   std::cout << "Yield = " << yield(beans, std::size(beans))
             << std::endl;
 }
