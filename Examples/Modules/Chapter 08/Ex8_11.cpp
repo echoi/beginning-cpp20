@@ -1,7 +1,8 @@
 // Using multiple default parameter values
-import <iostream>;
-import <format>;
-import <string>;
+#include <iostream>
+// #include <format>
+#include <string>
+#include <iomanip>
 
 // The function prototype including defaults for parameters
 void show_data(const int data[], size_t count = 1,  
@@ -31,7 +32,8 @@ void show_data(const int data[], size_t count, const std::string& title,
   // Output the data values
   for (size_t i {}; i < count; ++i)
   {
-    std::cout << std::format("{:{}}", data[i], width); // Display a data item
+    // std::cout << std::format("{:{}}", data[i], width); // Display a data item
+    std::cout << std::setw(width) << data[i]; // Display a data item
     if ((i+1) % perLine == 0)                          // Newline after perLine values
       std::cout << '\n';
   }

@@ -1,8 +1,13 @@
 // Using a reference parameter
-import <iostream>;
-import <format>;
-import <string>;
-import <vector>;
+// import <iostream>;
+// import <format>;
+// import <string>;
+// import <vector>;
+#include <iostream>
+#include <iomanip>
+// #include <format>
+#include <string>
+#include <vector>
 
 using std::string;
 using std::vector;
@@ -29,7 +34,7 @@ void find_words(vector<string>& words, const string& text, const string& separat
 
   while (start != string::npos)                          // Find the words
   {
-    size_t end{ text.find_first_of(separators, start + 1); } // Find end of word
+    size_t end { text.find_first_of(separators, start + 1) }; // Find end of word
     if (end == string::npos)                             // Found a separator?
       end = text.length();                               // No, so set to end of text
 
@@ -44,7 +49,8 @@ void list_words(const vector<string>& words)
   size_t count {};                 // Number of outputted words
   for (const auto& word : words)
   {
-    std::cout << std::format("{:>15}", word);
+    // std::cout << std::format("{:>15}", word);
+    std::cout << std::right << std::setw(15) << word;
     if (!(++count % 5))
       std::cout << std::endl;
   }
