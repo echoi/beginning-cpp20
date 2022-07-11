@@ -1,6 +1,6 @@
 // Creating an array of objects
-import <iostream>;
-import box;
+#include <iostream>
+#include "Box.hpp"
 
 int main()
 {
@@ -12,6 +12,6 @@ int main()
   std::cout << "box3 volume = " << box3.volume() << std::endl;   // Volume = 125
 
   std::cout << std::endl;
-
-  Box boxes[6] {box1, box2, box3, Box {2.0}};
+  // boxes[0], boxes[1], boxes[2] ...
+  Box boxes[6] {box1, box2, box3, Box {2.0}}; 
 }
