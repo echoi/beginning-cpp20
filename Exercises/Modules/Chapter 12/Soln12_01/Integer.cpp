@@ -1,5 +1,5 @@
 //module integer;
-#iinclude <iostream>
+#include <iostream>
 #include "integer.hpp"
 
 Integer::Integer(int value) : m_value{value}
