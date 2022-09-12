@@ -1,6 +1,6 @@
 // Using static members and a destructor to keep track of an object count
-import <iostream>;
-import integer;
+#include <iostream>
+#include "integer.hpp"
 
 void showIntegerVal(Integer it)
 {
