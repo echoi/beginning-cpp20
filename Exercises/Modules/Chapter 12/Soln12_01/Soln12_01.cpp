@@ -1,6 +1,7 @@
 // Implementing an Integer class
-import integer;
-import <iostream>;
+//import integer;
+#include <iostream>
+#include "integer.hpp"
 
 int main() 
 {
