@@ -3,8 +3,9 @@
  to store the object count. Every constructor should then increment
  this count, and you need to add a destructor that decrements it. 
 \*****************************************************************/
-module integer;
-import <iostream>;
+//module integer;
+#include <iostream>
+#include "integer.hpp"
 
 // Constructor
 Integer::Integer(int value) : m_value{value}
