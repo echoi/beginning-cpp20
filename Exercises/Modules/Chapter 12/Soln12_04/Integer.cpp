@@ -1,5 +1,6 @@
-module integer;
-import <iostream>;
+//module integer;
+#include <iostream>
+#include "integer.hpp"
 
 /****************************************************************\
  Implementing compare() as a friend is quite simple.
