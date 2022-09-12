@@ -1,6 +1,6 @@
 // Implementing add(), subtract() and multiply() 
-import <iostream>;
-import integer;
+#include <iostream>
+#include "integer.hpp"
 
 /***********************************************************
  By returning the dereferenced this pointer in the functions
