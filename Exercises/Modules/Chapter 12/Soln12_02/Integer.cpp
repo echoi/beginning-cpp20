@@ -1,6 +1,6 @@
-module integer;
-import <iostream>;
-
+//module integer;
+#include <iostream>
+#include "integer.hpp"
 // Constructor
 Integer::Integer(int value)
   : m_value{ value }
