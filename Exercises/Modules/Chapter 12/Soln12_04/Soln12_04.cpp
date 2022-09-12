@@ -1,6 +1,6 @@
 // Using a friend function
-import <iostream>;
-import integer;
+#include <iostream>
+#include "integer.hpp"
 
 int main()
 {
