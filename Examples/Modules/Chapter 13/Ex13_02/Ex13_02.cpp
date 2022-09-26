@@ -1,14 +1,20 @@
-// Using the overloaded 'less-than' operators for Box ojects
-import <iostream>;
-import <vector>;
-import <format>;
-import box;
+  // Using the overloaded 'less-than' operators for Box ojects
+// import <iostream>;
+// import <vector>;
+// import <format>;
+// import box; 
+
+#include <iostream>
+#include <vector>
+#include "Box.hpp"
+
 
 // Display box dimensions
 void show(const Box& box)
 {
-  std::cout << std::format("Box {:g}x{:g}x{:g}", 
-                 box.getLength(), box.getWidth(), box.getHeight()) << std::endl;
+  //std::cout << std::format("Box {:g}x{:g}x{:g}", 
+  //               box.getLength(), box.getWidth(), box.getHeight()) << std::endl;
+  std::cout << "Box dimension height: " << box.getHeight() << "; length: " << box.getLength() << "; width: " << box.getWidth() << std::endl;
 }
 
 int main()
