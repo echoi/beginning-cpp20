@@ -1,14 +1,19 @@
 // Overloading <=> and == to fully support all comparison operators
-import <iostream>;
-import <format>;
-import <string_view>;
-import <vector>;
-import box;
+#include <iostream>
+//import <format>;
+#include <string_view>
+#include <vector>
+//include <vector>
+#include "Box.hpp"
+
+
 
 void show(const Box& box)
 {
-  std::cout << std::format("Box({:.1f}, {:.1f}, {:.1f})", 
-                  box.getLength(), box.getWidth(), box.getHeight());
+  // std::cout << std::format("Box({:.1f}, {:.1f}, {:.1f})", 
+  //                 box.getLength(), box.getWidth(), box.getHeight());
+  std::cout << "Box("<<box.getLength()<<", "
+            << box.getWidth()<<", "<< box.getHeight()) << std::endl; 
 }
 void show(const Box& box1, std::string_view relationship, const Box& box2)
 {
