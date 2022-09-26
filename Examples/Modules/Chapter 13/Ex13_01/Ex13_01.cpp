@@ -1,12 +1,17 @@
 // Implementing a less-than operator
-import <iostream>;
-import <vector>;
-import box;
+// import <iostream>;
+// import <vector>;
+// import box;
+
+#include <iostream>
+#include <vector>
+#include "Box.hpp"
 
 int main()
 {
   std::vector boxes {Box {2.0, 2.0, 3.0}, Box {1.0, 3.0, 2.0},
-                     Box {1.0, 2.0, 1.0}, Box {2.0, 3.0, 3.0}};
+                     Box {1.0, 2.0, 1.0}, Box {2.0, 3.0, 3.0},
+                     Box {0.1, 0.2, 0.01} };
   Box smallBox {boxes[0]};
   for (const auto& box : boxes)
   {
