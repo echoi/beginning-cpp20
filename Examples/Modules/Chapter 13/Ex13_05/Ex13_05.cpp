@@ -1,10 +1,11 @@
 // Using the addition operator for Box objects
-import <iostream>;
-import <format>;
-import <vector>;
-import <random>;       // For random number generation
-import <functional>;   // For std::bind()
-import box;
+#include <iostream>
+// import <format>;
+#include <vector>
+#include <random>       // For random number generation
+#include <functional>  // For std::bind()
+// import box;
+#include "Box.hpp"
 
 // See Chapter 12 for an explanation of this function
 auto createUniformPseudoRandomNumberGenerator(double max)
@@ -46,10 +47,16 @@ int main()
 
   std::cout << "The two boxes that sum to the smallest volume are "
             << boxes[first] << " and " << boxes[second] << '\n';
-  std::cout << std::format("The volume of the first box is {:.1f}\n",
-                            boxes[first].volume());
-  std::cout << std::format("The volume of the second box is {:.1f}\n",
-                            boxes[second].volume());
+  std::cout << "The volume of the first box is " << boxes[first].volume() << std::endl;
+  std::cout << "The volume of the second box is " << boxes[second].volume() << std::endl;
+  // std::cout << std::format("The volume of the first box is {:.1f}\n",
+  //                           boxes[first].volume());
+  // std::cout << std::format("The volume of the second box is {:.1f}\n",
+  //                           boxes[second].volume());
   std::cout << "The sum of these boxes is " << (boxes[first] + boxes[second]) << '\n';
-  std::cout << std::format("The volume of the sum is {:.1f}", minVolume) << std::endl;
+  std::cout << "The volume of the sum is " << minVolume << std::endl;
+  // std::cout << std::format("The volume of the sum is {:.1f}", minVolume) << std::endl;
+  
+  std::cout << "The difference of these boxes is " << (boxes[first] - boxes[second]) << '\n';
+  std::cout << "The volume of the difference is " <<  (boxes[first] - boxes[second]).volume() << std::endl;
 }
