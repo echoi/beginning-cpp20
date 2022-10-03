@@ -13,7 +13,7 @@ void show(const Box& box)
   // std::cout << std::format("Box({:.1f}, {:.1f}, {:.1f})", 
   //                 box.getLength(), box.getWidth(), box.getHeight());
   std::cout << "Box("<<box.getLength()<<", "
-            << box.getWidth()<<", "<< box.getHeight()) << std::endl; 
+            << box.getWidth()<<", "<< box.getHeight() << ") " << std::endl; 
 }
 void show(const Box& box1, std::string_view relationship, const Box& box2)
 {
