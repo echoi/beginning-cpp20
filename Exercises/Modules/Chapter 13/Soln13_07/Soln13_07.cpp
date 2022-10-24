@@ -1,7 +1,7 @@
 // Exercise 13-7
 // Rational operators
-import <iostream>;
-import rational;
+#include <iostream>
+#include "Rational.hpp"
 
 int main()
 {
@@ -15,7 +15,6 @@ int main()
   std::cout << "y = " << static_cast<double>(y) << std::endl;
   
   std::cout << "-x = " << -x << std::endl;
-  
   std::cout << "x + y = " << x + y << std::endl;
   std::cout << "x - y = " << x - y << std::endl;
   std::cout << "x * y = " << x * y << std::endl;
