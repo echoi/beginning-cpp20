@@ -1,8 +1,7 @@
-module;
+//module;
 #include <cmath>    // For the min() and max() function templates
-module box;
-
-import <format>;
+//module box;
+#include "Box.hpp"
 
 double Box::volume() const
 {
@@ -39,7 +38,8 @@ std::partial_ordering Box::operator<=>(double value) const
 
 std::ostream& operator<<(std::ostream& stream, const Box& box)
 {
-  stream << std::format("Box({:.1f}, {:.1f}, {:.1f})",
-                          box.getLength(), box.getWidth(), box.getHeight());
+  //stream << std::format("Box({:.1f}, {:.1f}, {:.1f})",
+  //                        box.getLength(), box.getWidth(), box.getHeight());
+  stream << " " << box.getLength() << ", " << box.getWidth() << ", " << box.getHeight();
   return stream;
 }
